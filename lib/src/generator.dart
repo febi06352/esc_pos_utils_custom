@@ -571,7 +571,7 @@ class Generator {
   List<int> image(Image imgSrc, {PosAlign align = PosAlign.center}) {
     List<int> bytes = [];
     // Image alignment
-    bytes += setStyles(PosStyles().copyWi th(align: align));
+    bytes += setStyles(PosStyles().copyWith(align: align));
 
     final Image image = Image.from(imgSrc); // make a copy
     const bool highDensityHorizontal = true;
